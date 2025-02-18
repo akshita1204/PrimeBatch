@@ -16,4 +16,4 @@ delete(arr[2]);
 console.log(arr[2])
 console.log(arr) //it will not shift the other elements of the array
 
-//
+//splice, slice, pop ,shift
