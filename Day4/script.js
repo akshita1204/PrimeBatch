@@ -1,3 +1,6 @@
+                                  //for Each and Map Function
+
+
 //Elimation of the etra variable
 // const sum=(a,b,c)=>
 // {
@@ -143,6 +146,7 @@
     const num=getdata();
     const record=getsub(num)
     const per= getper(record);
-    //console.log(per)
     gethigherscoringsub(record)
     getgrades(per)
+
+   
