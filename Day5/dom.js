@@ -31,4 +31,6 @@ console.log(ele3)
 console.log(ele3)
 
 
+const ele4=document.querySelector("#text-4")
+console.log(ele4)
 //query selector will give the first ele that will match and the queryselector all will give all the ele that will match
