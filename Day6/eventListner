@@ -1,0 +1,9 @@
+Event Listener allows us to create custom responses to events like click 
+There are two ways to use them:
+1.using html
+2.using 
+
+1.Using html
+ <header>
+        <button onclick="handleBgChange() " id="btn">Change Background</button>
+</header>

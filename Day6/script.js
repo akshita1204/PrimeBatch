@@ -17,6 +17,30 @@ data.forEach((ele)=>
    <h6>${ele.email}</h6>
    <p>${ele.city}</p>
    `;
-   
+
    root.appendChild(newCard)
 })
+
+
+
+const handleBgChange=()=>
+{
+  
+  //logic to change the color background color of the page
+  const bodyEle=document.querySelector('body');
+  bodyEle.style.backgroundColor=getRandomColor();
+  console.log("Change Color")
+}
+
+
+
+//function to get the random background color for the page
+const getRandomColor=()=>
+{
+    const randomR=Math.floor(Math.random()*255);
+    const randomG=Math.floor(Math.random()*255);
+    const randomB=Math.floor(Math.random()*255);
+
+    return `rgb(${randomR},${randomG},${randomB})`;
+}
+
