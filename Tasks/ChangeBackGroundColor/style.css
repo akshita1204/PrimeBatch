@@ -1,0 +1,21 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    padding: 1rem;
+}
+.card
+{
+    width:400px;
+    background-color: rgb(250, 209, 250);
+    border: 1px solid black;
+    margin: 1rem auto;
+    padding:1rem;
+    border-radius: 0.75rem;
+}
+button
+{
+    background-color: rgb(236, 222, 236)
+};
