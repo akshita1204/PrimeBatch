@@ -1,0 +1,7 @@
+onkeydown()=> Ye event tab run hota hai, jab key actually press ho jati hai (abhi tak release nahi hui)
+The onkeydown event occurs when the user presses a key on the keyboard.
+
+onkeyup()=> tab trigger hota hai jab aap kisi key ko release karte ho, yani key ko upar karte ho.
+jaise hi key ko release kiya ky up
+
+onchange()=> Yeh event tab trigger hota hai jab user input field se bahar click karta hai ya enter press karta hai
