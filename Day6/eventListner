@@ -7,3 +7,24 @@ There are two ways to use them:
  <header>
         <button onclick="handleBgChange() " id="btn">Change Background</button>
 </header>
+
+
+
+Pehle html execute ho jaaye uske baad js execute ho thats why we use script tag at the end.
+For example we can only change the background color if the button is successfully displayed over the screen and the code written for that is displyed then only we can use thefunction wriiten in js
+
+
+
+How EventLoop Works...?
+Event Loop checks is there is anything pending and checks whether is the callback empty.
+Whenever a func comes, it comes along with its parent..As a child func can access the variables of its ancestors.
+
+
+Call stack wo jagah hai jahan pe JavaScript apne functions ko execute karta hai. Jab bhi koi function call hota hai, vo call stack me add ho jata hai aur jab vo function complete ho jata hai, to vo stack se remove ho jata hai.
+
+Event Loop ka kaam hai ye check karna ki call stack khali hai ya nahi. Jab call stack khali hota hai, tab event loop callback queue me se ek function uthata hai aur usse call stack me dalke execute karta hai.
+Iska matlab, jab asynchronous task complete hota hai, uska callback function callback queue me aa jata hai. Event Loop tab tak wait karta hai jab tak call stack khali na ho, aur fir callback queue se function ko leke call stack me execute karwata hai.
+
+
+
+
