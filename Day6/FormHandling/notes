@@ -5,3 +5,8 @@ onkeyup()=> tab trigger hota hai jab aap kisi key ko release karte ho, yani key 
 jaise hi key ko release kiya ky up
 
 onchange()=> Yeh event tab trigger hota hai jab user input field se bahar click karta hai ya enter press karta hai
+
+
+
+Events=>
+Event ka matlab hai koi bhi action ya occurrence jo browser ke andar ho raha ho, jaise ki koi user koi button click kare, kisi field mein text type kare, ya page load ho. Jab yeh events happen hote hain, toh JavaScript unko handle karta hai aur hum event listeners ke through uss event par specific actions define kar sakte hain.
