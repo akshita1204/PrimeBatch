@@ -1,0 +1,12 @@
+Bubbling and capturing
+
+
+Event Bubbling means that the event starts at the target element (where the event occurred) and then bubbles up to its parent elements, all the way up to the root of the document (like the document element).
+Bubbling is the default behavior in JavaScript.
+The event is first triggered on the target element.
+Then it moves to its parent, then to the parent of the parent, and so on.
+
+
+Event Capturing (also called Trickling) is the opposite of bubbling. In this phase, the event is first captured by the outermost element (like document or window) and then moves downwards to the target element.
+The event will first be captured by the parent (outermost element).
+Then it will move inward, reaching the child (button) last.
