@@ -20,7 +20,7 @@ const handleformsubmit = (e) => {
     const isemailexists = data.some((ele) => {
     return e.email === e.target.email.value;
      });
-     
+
 
     if (isemailexists) {
         alert("Already exists");
@@ -29,3 +29,6 @@ const handleformsubmit = (e) => {
     data.push(obj)
     console.log(data)
 }
+
+
+
