@@ -25,7 +25,6 @@ data.forEach((ele)=>
 
 const handleBgChange=()=>
 {
-  
   //logic to change the color background color of the page
   const bodyEle=document.querySelector('body');
   bodyEle.style.backgroundColor=getRandomColor();
