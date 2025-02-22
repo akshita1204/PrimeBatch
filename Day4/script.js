@@ -1,7 +1,7 @@
                                   //for Each and Map Function
 
 
-//Elimation of the etra variable
+//Elimation of the extra variable
 // const sum=(a,b,c)=>
 // {
 //     const ans=a+b;
