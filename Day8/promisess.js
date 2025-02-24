@@ -21,21 +21,21 @@ pr1.then((a)=>
 });
 }
 
-getdata();
+//getdata();
 
 function showUI(data)
 {
    console.log("data",data);
    const {avatar_url,login,html_url}=data;
-   const root=document.getElementById("card");
+   const root=document.getElementById("cards");
    const newcard=document.createElement("div")
-   newcard.id="cards"
-   card.innerHTML= `
+   newcard.id="card"
+   newcard.innerHTML= `
    <h4>${login.toUpperCase()}</h4>
    <img src='${avatar_url}' alt='avatar'>
    <a href=${html_url}>View Profile</a>
    `;
-
+   root.appendChild(newcard)
    storeData(data);
 }
 
@@ -50,11 +50,11 @@ function storeData(data)
 function showHistory()
 {
     const olddata=localStorage.getItem('searches');
-    const arr=JSON.parse[olddata || "[]"];
+    const arr=JSON.parse(olddata || "[]");
     arr.forEach((data)=>
     {
         showUI(data);
-    })
+    });
 }
 showHistory();
 

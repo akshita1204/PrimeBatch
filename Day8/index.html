@@ -7,10 +7,18 @@
     <style>
         #card
         {
-             max-width:300px;
-             border:1px solid brown;
+            max-width: 300px;
+            border: 1px solid brown;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
              
-
+        }
+        img {
+            width: 250px;
         }
     </style>
 </head>
@@ -19,7 +27,7 @@
         <input id="serach-text" type="text" name="github-profile" onchange="getdata(event)">
     </header>
     <h1>Async</h1>
-    <div id="card"></div>
+    <div id="cards"></div>
     <script src="./promisess.js"></script>
 </body>
 </html>
