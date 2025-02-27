@@ -41,3 +41,21 @@ const handleSearch=(e)=>
         getdata(e.target.value)
     },1000);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Debouncing=> means har ek letter par bhi nahi api call karni hai but ek time set kardiya uske baad api call hogi mainly for the suggestions.Agar har baar API call hogi to cost increase hogi islie.
+
+//Event Deligation=>
