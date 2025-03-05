@@ -3,11 +3,30 @@ import ReactDOM from 'react-dom/client'
 const domRoot=document.getElementById("parent");
 const reactRoot=ReactDOM.createRoot(domRoot);
 
+const Card=({username})=>
+{
+    //{} are used to write any expression
+    // console.log(abc.username);
+    // const {username}=abc;
+    // console.log(username)
+    return (
+        <div className='card'>
+            <h3>Hello {username}!</h3>
+            <p>Nice to meet you!</p>
+        </div>
+    )
+}
+
 const App=()=>
 {
     return(
       <div>
         <h1>Hello!</h1>
+        <Card username="Akshita"/>
+        <Card username="Akshita"/>
+        <Card username="Akshita"/> 
+        {/* {Card("Akshita")}
+        {Card({username:"Akshita"})} */}
       </div>
    // React.createElement("h1",{},"hello from App...")
     );
