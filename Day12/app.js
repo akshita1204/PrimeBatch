@@ -1,21 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import Card from './components/card'
+import { Button } from './components/button';
 const domRoot=document.getElementById("parent");
 const reactRoot=ReactDOM.createRoot(domRoot);
 
-const Card=({username})=>
-{
-    //{} are used to write any expression
-    // console.log(abc.username);
-    // const {username}=abc;
-    // console.log(username)
-    return (
-        <div className='card'>
-            <h3>Hello {username}!</h3>
-            <p>Nice to meet you!</p>
-        </div>
-    )
-}
+// const Card=({username})=>
+// {
+//     //{} are used to write any expression
+//     // console.log(abc.username);
+//     // const {username}=abc;
+//     // console.log(username)
+//     return (
+        
+//     )
+// }
 
 const App=()=>
 {
@@ -25,6 +24,7 @@ const App=()=>
         <Card username="Akshita"/>
         <Card username="Akshita"/>
         <Card username="Akshita"/> 
+        <button>Submit</button>
         {/* {Card("Akshita")}
         {Card({username:"Akshita"})} */}
       </div>
