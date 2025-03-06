@@ -1,10 +1,11 @@
+import { Link } from "react-router"
 const ErrorPage=()=>
     {
         return(
             <div>
                 <h2>Oops Page not found</h2>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
             </div>
         )
     }
-    export default ErrorPage
+    export default ErrorPage;
