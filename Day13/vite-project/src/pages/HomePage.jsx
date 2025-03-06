@@ -8,7 +8,7 @@ const HomePage=()=>
                 <h2>Hello from React App!</h2>
                 <p>Welcome!</p>
             </main>
-            <foooter>Copyright</foooter>
+            <footer>Copyright</footer>
         </div>
     )
 }
