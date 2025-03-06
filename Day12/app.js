@@ -24,7 +24,8 @@ const App=()=>
         <Card username="Akshita"/>
         <Card username="Akshita"/>
         <Card username="Akshita"/> 
-        <button>Submit</button>
+        <Button color="submit">Submit</Button>
+        <Button color="danger">Cancel</Button>
         {/* {Card("Akshita")}
         {Card({username:"Akshita"})} */}
       </div>
