@@ -38,16 +38,18 @@
 import { useState } from "react";
 const AppForm=()=>
   { 
+    
       const [flag,setflag]=useState(true);
       const[username,setusername]=useState();
 
       const handleClick=()=>
       {
+  
          setflag(false);
       }
       const handleChange=(e)=>
         {
-           setusername(e.target.value);
+          setusername(e.target.value);
         }
     //   if(flag==true)
     //   {
