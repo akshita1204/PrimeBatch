@@ -5,6 +5,7 @@ const AppPage=()=>
 {
 
   const [data,setdata]=useState({});
+  const [curpage,setcurpage]=useState(0);
   // const getData=()=>
   // {
   //   const pr1=fetch("https://dummyjson.com/products");
@@ -39,7 +40,7 @@ const AppPage=()=>
   {
     try
     {
-    const response=await fetch("https://dummyjson.com/products?limit=10&skip=0");
+    const response=await fetch(`https://dummyjson.com/products?limit=10&skip=${curpage}`);
     const tem=await response.json();
     setdata(tem);
     }
@@ -56,7 +57,7 @@ const AppPage=()=>
 
   
 
-  useEffect(()=>{getData()},[]);
+  useEffect(()=>{getData()},[curpage]);
  //[] it will only run the sideeffect ones 
 
   console.log("after get data",data)
@@ -80,7 +81,9 @@ const AppPage=()=>
         return <Card title={elem.title} price={elem.price} thumbnail={elem.thumbnail}/>
       })}
 
-      <select>
+      <select onChange={(e)=>{setcurpage(e.target.value) 
+        //console.log(e.target.value)
+      }}>
         {
            pages.map((pagenumber)=>
           {
