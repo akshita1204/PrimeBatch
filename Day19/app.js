@@ -25,8 +25,8 @@ const server=http.createServer((req,res)=>
             })
         )
     }
- 
 });
+
 server.listen(2100,()=>
 {
     console.log("server is running on the port 2100")
