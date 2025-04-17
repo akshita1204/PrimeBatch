@@ -17,14 +17,15 @@ const saveLogs=async (obj)=>
 */
 const saveLog=(str)=>
 {
-    fsPromises.writeFile("logs.txt",str);
+    //fsPromises.writeFile("logs.txt",str);
+    fsPromises.appendFile("logs.txt", str);
 }
 
 const requestLog=async(req)=>
 {
     const{method,url}=req;
     const date=new Date();
-    saveLog(`${date}-${method}-${url}`);
+    saveLog(`${date.toLocaleString()}-${method}-${url}\n`);
 }
 module.exports=
 {

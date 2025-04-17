@@ -5,6 +5,7 @@ const PORT=2100;
 const app=express();
 const {requestLog}=require("./utils/logs")
 
+
 app.get("/",(req,res)=>
 {
   console.log(req.url,req.method)
@@ -27,6 +28,17 @@ app.post('/products',(req,res)=>
         }
       )
 });
+
+app.use((req,res,next)=>    //middleware
+    {
+        res.status(404);
+        res.json({
+            status:"fail",
+            message:"You are trying to access a route which is not defined yet"
+        })
+        requestLog(req);
+        next();
+    })
 
 app.listen(PORT,()=>
 {
