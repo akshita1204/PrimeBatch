@@ -6,3 +6,12 @@
 17/4/2025, 3:47:08 pm-POST-/
 17/4/2025, 3:52:11 pm-PATCH-/about-me
 17/4/2025, 3:52:48 pm-PATCH-/about-me
+17/4/2025, 4:04:33 pm-PATCH-/products
+17/4/2025, 4:08:23 pm-POST-/products
+17/4/2025, 4:27:36 pm-POST-/products
+17/4/2025, 4:31:08 pm-POST-/products
+17/4/2025, 4:43:47 pm-POST-/products
+17/4/2025, 4:43:55 pm-POST-/products
+17/4/2025, 4:45:33 pm-POST-/products
+17/4/2025, 4:46:42 pm-POST-/products
+17/4/2025, 4:47:07 pm-POST-/products
