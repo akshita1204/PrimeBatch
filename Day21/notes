@@ -1,0 +1,28 @@
+
+//----------------------------------------------MVC Architecture---------------------------------------------------------
+M => database
+V=> Angular, Nextjs, React 
+C=> BuisnessLogic
+
+//---------------------------------------------Folder Structure----------------------------------------------------------
+/*
+Models=> database
+
+controllers=> req will be passed to the controllers first
+utils=>
+constants=>
+config=>
+service=>
+middleware=>
+
+
+*/
+
+
+
+/*
+1. npm init -y
+2. npm i express nodemon dotenv mongodb mongoose
+
+
+*/
