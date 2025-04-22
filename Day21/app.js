@@ -2,6 +2,7 @@
 
 const express=require('express')
 const morgan=require('morgan')
+const {productRouter}=require("./src/api/v1/products/routes/product-routes.js")
 const PORT=2200;
 
 const app=express();
@@ -11,7 +12,9 @@ const app=express();
 // {
 //     console.log('Hello');
 // })
+
 app.use(morgan("dev"));
+app.use("/api/v1/products",productRouter);
 
 app.listen(PORT,()=>
 {

@@ -4,6 +4,12 @@ M => database
 V=> Angular, Nextjs, React 
 C=> BuisnessLogic
 
+
+
+
+
+
+
 //---------------------------------------------Folder Structure----------------------------------------------------------
 /*
 Models=> database
@@ -15,14 +21,31 @@ config=>
 service=>
 middleware=>
 
+dto=> data transfer layer-> it is the first layer of security-> jo input chahiye wo usi format me aaye hai yaa nahi
 
 */
 
 
 
+
+
+
+
+//------------------------------------Installation----------------------------------------------------------
 /*
 1. npm init -y
 2. npm i express nodemon dotenv mongodb mongoose
+*/
 
+
+
+//----------------------------------------How does it work?--------------------------------------------------------------
+/*
+1. To define the various routes we will use the route folder.
+2. 
 
 */
+
+
+
+
