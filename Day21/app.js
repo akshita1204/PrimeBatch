@@ -1,12 +1,13 @@
-
-
+require('dotenv').config();
+require("./src/config/db.js");    
+    
 const express=require('express')
 const morgan=require('morgan')
 const {productRouter}=require("./src/api/v1/products/routes/product-routes.js")
 const PORT=2200;
 
 const app=express();
-
+app.use(express.json());
 //App Level middleware
 // app.use((req,res,next)=>
 // {

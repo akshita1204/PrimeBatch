@@ -1,20 +1,17 @@
 
-
+const { default: mongoose } = require("mongoose");
+const {getProductsController}=require("../controllers/getProductsController.js")
+const {postProductsController}=require("../controllers/postProductsController.js")
 const express=require("express");
 
 //exports.productRouter=express.Router();
 const productRouter=express.Router();
 
-productRouter.get("/",(req,res)=>
-{
-    console.log("Request received");
-    res.json({
-        status:"fail",
-        message:"Work in progress!",
-    });
-});
+productRouter.get("/",getProductsController);
+productRouter.post("/",postProductsController);
 
 module.exports={
     productRouter,
 }
+
 
