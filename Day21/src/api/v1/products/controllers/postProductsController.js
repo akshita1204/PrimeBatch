@@ -2,6 +2,7 @@ const express = require("express")
 const { productModel } = require("../../../../models/product_schema.js")
 
 const postProductsController = async (req, res) => {
+try{
     const obj=req.body;
     const newProduct = await productModel.create(obj);
     res.status(201);
@@ -13,6 +14,13 @@ const postProductsController = async (req, res) => {
         }
     });
 }
+catch(err)
+{
+    res.status(500)
+}
+}
 module.exports = {
     postProductsController
 }
+
+//to post
