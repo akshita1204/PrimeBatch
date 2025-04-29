@@ -1,0 +1,123 @@
+[
+    {
+      "title": "Apple iPhone 15",
+      "price": 999,
+      "stock": 50,
+      "tags": ["smartphone", "electronics", "apple"]
+    },
+    {
+      "title": "Samsung Galaxy S24",
+      "price": 899,
+      "stock": 35,
+      "tags": ["smartphone", "electronics", "samsung"]
+    },
+    {
+      "title": "Sony WH-1000XM5 Headphones",
+      "price": 349,
+      "stock": 20,
+      "tags": ["headphones", "electronics", "sony"]
+    },
+    {
+      "title": "Dell XPS 13 Laptop",
+      "price": 1299,
+      "stock": 10,
+      "tags": ["laptop", "electronics", "dell"]
+    },
+    {
+      "title": "Apple MacBook Air M3",
+      "price": 1399,
+      "stock": 15,
+      "tags": ["laptop", "apple", "electronics"]
+    },
+    {
+      "title": "Logitech MX Master 3S Mouse",
+      "price": 99,
+      "stock": 100,
+      "tags": ["mouse", "accessories", "logitech"]
+    },
+    {
+      "title": "Samsung 4K Smart TV 55 inch",
+      "price": 799,
+      "stock": 5,
+      "tags": ["tv", "electronics", "samsung"]
+    },
+    {
+      "title": "Canon EOS 90D DSLR Camera",
+      "price": 1199,
+      "stock": 7,
+      "tags": ["camera", "dslr", "canon"]
+    },
+    {
+      "title": "Fitbit Charge 6",
+      "price": 149,
+      "stock": 25,
+      "tags": ["fitness", "wearable", "fitbit"]
+    },
+    {
+      "title": "Google Pixel 8 Pro",
+      "price": 999,
+      "stock": 30,
+      "tags": ["smartphone", "google", "electronics"]
+    },
+    {
+      "title": "HP Envy x360 Convertible",
+      "price": 899,
+      "stock": 12,
+      "tags": ["laptop", "hp", "convertible"]
+    },
+    {
+      "title": "Amazon Echo Dot 5th Gen",
+      "price": 49,
+      "stock": 80,
+      "tags": ["smart-home", "speaker", "amazon"]
+    },
+    {
+      "title": "Apple AirPods Pro 2nd Gen",
+      "price": 249,
+      "stock": 60,
+      "tags": ["audio", "apple", "earbuds"]
+    },
+    {
+      "title": "Razer BlackWidow V4 Keyboard",
+      "price": 179,
+      "stock": 40,
+      "tags": ["keyboard", "gaming", "razer"]
+    },
+    {
+      "title": "Sony PlayStation 5",
+      "price": 499,
+      "stock": 8,
+      "tags": ["console", "gaming", "sony"]
+    },
+    {
+      "title": "Xiaomi Mi Air Purifier 4",
+      "price": 199,
+      "stock": 22,
+      "tags": ["appliance", "xiaomi", "health"]
+    },
+    {
+      "title": "Kindle Paperwhite 11th Gen",
+      "price": 139,
+      "stock": 18,
+      "tags": ["ebook", "amazon", "reading"]
+    },
+    {
+      "title": "Anker PowerCore 20000mAh",
+      "price": 59,
+      "stock": 75,
+      "tags": ["powerbank", "charger", "anker"]
+    },
+    {
+      "title": "JBL Flip 6 Bluetooth Speaker",
+      "price": 129,
+      "stock": 45,
+      "tags": ["speaker", "bluetooth", "jbl"]
+    },
+    {
+      "title": "Nikon Z50 Mirrorless Camera",
+      "price": 999,
+      "stock": 6,
+      "tags": ["camera", "mirrorless", "nikon"]
+    }
+  ]
+  
