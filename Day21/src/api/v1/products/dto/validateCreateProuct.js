@@ -1,23 +1,27 @@
-const validateCreateProuctDto=(req,res,next)=>
+const validateCreateProductDto=(req,res,next)=>
 {  
-    const {title,price,stock}=req.body;
-    if(title===undefined || title===null || typeof title!=="string" || title.length < 2)
+    
+    try
     {
-        res.status(400);
-        res.json({
-            status:'fail',
-            message:'Invalid fail',
-        })
+        const {title,price,stock}=req.body;
+        if(title===undefined || title===null || typeof title!=="string" || title.length < 2)
+            {
+               throw new Error("Invalid Title")
+            }
+            if(price===undefined || price===null || Number(price)===NaN || price<0)
+            {
+                throw new Error("Invalid Price")
+            }
+            if(stock!==undefined && price!==null)
+            {
+              if(Number(stock)===NaN || Number(stock)<=0)
+              {
+                throw new Error("Invalid Stock")
+              }
+            }
+            next();
     }
-    if(price===undefined || price===null || Number(price)===NaN || price<0)
-    {
-        res.status(400);
-        res.json({
-            status:'fail',
-            message:'Invalid fail',
-        })
-    }
-    if(stock===undefined || stock===null || stock<0)
+    catch(err)
     {
         res.status(400);
         res.json({
@@ -26,3 +30,4 @@ const validateCreateProuctDto=(req,res,next)=>
         })
     }
 }
+module.exports=validateCreateProductDto;
