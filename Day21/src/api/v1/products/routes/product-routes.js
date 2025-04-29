@@ -8,7 +8,7 @@ const express=require("express");
 const productRouter=express.Router();
 
 productRouter.get("/",getProductsController);
-productRouter.post("/",postProductsController);
+productRouter.post("/",validateCreateProuctDto,postProductsController);
 
 module.exports={
     productRouter,
