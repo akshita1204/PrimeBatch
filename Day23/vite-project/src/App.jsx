@@ -1,9 +1,15 @@
-
+import {Routes,Route, BrowserRouter} from "react-router";
+import { SearchPage } from "./pages/SearchPage";
 const App=()=>
 {
-  return <div>
-    <h1 className="underline">Hello from FRONTEND!</h1>
-  </div>
+  return (
+    <BrowserRouter>
+    <Routes>
+       <Route index element={<h1>Home Page</h1>}/>
+       <Route path="search" element={<SearchPage/>}/>
+    </Routes>
+    </BrowserRouter>
+  )
 };
 
 export default App;
