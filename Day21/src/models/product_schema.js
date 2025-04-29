@@ -14,7 +14,11 @@ const productSchema = new mongoose.Schema({
         type: Number,
         default: 1,
         minimum: 0,
-    }
+    },
+    tags:
+    {
+      type:[String]
+    },
 })
 const productModel = mongoose.model("product", productSchema)
 module.exports =
