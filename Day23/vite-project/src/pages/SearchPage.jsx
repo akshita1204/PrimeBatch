@@ -1,28 +1,38 @@
 
-import { useState } from "react";
+import { useState} from "react";
+import { useGetProducts } from "../hooks/useGetProducts";
 const SearchPage=()=>
 {
     const [searchText,setSearchText]=useState("");
+    const {products}=useGetProducts();
+    //logic in the useGetProducts
+    return (
+        <div className="p-4 m-4">
+        <div className="flex gap-4">
+            <input 
+            className="py-1 px-3 border-1 border-solid border-black-400 rounded-lg"
+            type="text" value={searchText} onChange={(e)=>setSearchText(e.target.value)}/>
+            <button className="py-1 px-3 rounded-lg bg-red-300 text-white">Search</button>
+        </div>
+        <div>
+            <h1 className="text-red-300 my-6 text-xl">Products</h1>
+            <div className="grid grid-cols-3 items-center justify-center gap-4">
+           
+             {products.map(({_id,title,price,stock})=>
+            {
+                return(
+                    <div key={_id}>
+                        <h2>{title}</h2>
+                        <h3>Rs.{price}</h3>
+                        <h3>Available:{stock}</h3>
+                    </div>
+                )
+            })}
+            </div>
 
-    const getData=async ()=>
-    {
-        const resp=await fetch("http://localhost:2200/api/v1/products",{
-            method:"GET",
-        });
-        const data=await resp.json();
-        console.log("data",data);
-    }
-    getData();
-    return <div>
-        <div>
-            <input type="text" value={searchText} onChange={(e)=>setSearchText(e.target.value)}/>
-            <button>Search</button>
         </div>
-        <div>
-            <h1>Products</h1>
-            <div></div>
-        </div>
-        </div>   
+        </div> 
+    )  
         
 }
 

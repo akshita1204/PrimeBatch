@@ -21,6 +21,13 @@ const getProductsController=async (req,res)=>
 
 
           const productList=await mongoosequery;
+
+        await new Promise((resolve,reject)=>
+        {
+            setTimeout(()=>{
+                resolve();
+            },5000)
+        })
           
           
            console.log("Request received");
