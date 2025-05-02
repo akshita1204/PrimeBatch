@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 });
 
 //function to send the OTP 
-const sendMail=async ()=>
+const sendMail=async ({emails,subject,html})=>
 {
    try
    {
