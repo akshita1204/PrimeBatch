@@ -9,12 +9,51 @@ const transporter = nodemailer.createTransport({
   secure: false, // true for port 465, false for other ports
   auth: {
     user: "takshita061@gmail.com",
-    pass: "mrms yvni vmps mvmx",
+    pass: "",
   },
 });
 
 //function to send the OTP 
-const sendMail=()=>
+const sendMail=async ()=>
 {
-    
+   try
+   {
+    const info = await transporter.sendMail({
+        from: '"Admin" <akshita@gmail.com>', // sender address
+        to: emails, // list of receivers
+        subject: subject, // Subject line
+        html: html, // html body
+      });
+   }
+   catch(err)
+   {
+    console.log("Could not send email to",emails);
+    console.log(err.message);
+   }
+}
+
+const sendOtpMail=async({otp,email})=>
+{
+    await sendMail({
+        subject:"Otp Verification",
+        emails:[email],
+        html:`
+        <html>
+    <body>
+        <div style="display:flex; align-items: center; justify-content: center; background-color: antiquewhite;">
+            <div style="padding:2rem">
+               <h2>OTP Verification</h2>
+               <p>Your OTP for verification is ${otp}</p>
+            </div>
+
+        </div>
+    </body>
+</html>
+
+          `
+    })
+}
+
+module.exports={
+    sendOtpMail
 }
