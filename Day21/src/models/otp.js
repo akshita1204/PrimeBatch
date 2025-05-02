@@ -5,7 +5,13 @@ const otpSchema=new mongoose.Schema({
   {
     type:String,
     required:true,
-    trim:true
+    trim:true,
+  },
+  otp:
+  {
+    type:String,
+    reqired:true,
+    trim:true,
   }
 });
 const OtpModel=mongoose.model("otp",otpSchema);
