@@ -56,3 +56,6 @@ export const SignupPage = () => {
         </div>
     );
 };
+
+
+//Sign up Page is ready
