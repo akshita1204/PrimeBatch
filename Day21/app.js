@@ -12,11 +12,7 @@ const app=express();
 
 app.use(cors());
 app.use(express.json());
-//App Level middleware
-// app.use((req,res,next)=>
-// {
-//     console.log('Hello');
-// })
+
 
 app.use(morgan("dev"));
 app.use("/api/v1/products",productRouter);
